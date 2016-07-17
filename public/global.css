@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-content: left;
+  list-style-type: none;
+	background-color: black;
+  color: white;
+  font-size: 12pt;
+  font-weight: 100;
+  text-align: left;
+  min-height: 100vh;
+}
+.allTasks{
+  display: flex;
+  justify-content: left;
+  padding: 5px;
+}
+.allTasks button[type=submit] {
+  display: inline-flex;
+  border: 1px solid #e4e4e4;
+  color: white;
+  text-align: center;
+
+}
+
+.allTasks__header{
+  font-size: 2em;
+}
+.winnerNotice__whichPlayer{
+  -webkit-animation-name: winnerNotice__whichPlayer; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  animation-name: winnerNotice__whichPlayer;
+  animation-duration: 4s;
+}
+@-webkit-keyframes winnerNotice__whichPlayer {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+@keyframes winnerNotice__whichPlayer {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+.tieNotice{
+  color: white;
+  font-size: 3em;
+  font-weight: 100;
+  text-align: center;
+}
+.tieNotice__image{
+  height: 400px;
+  width: 400px;
+}
+.personalize__Welcome{
+  font-size: 5em;
+  -webkit-animation-name: personalize__Welcome; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+  animation-name: personalize__Welcome;
+  animation-duration: 10s;
+}
+@-webkit-keyframes personalize__Welcome {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+@keyframes personalize__Welcome {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+.personalize__Inputs{
+  font-size: -1em;
+}

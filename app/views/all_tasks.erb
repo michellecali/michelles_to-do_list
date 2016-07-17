@@ -1,0 +1,9 @@
+<div class="allTasks">
+	<form class="allTasks__list" method="post" action="/all_tasks">
+		<p class="allTasks__header">List of All Tasks</p>
+		<% @taskDescription.each do |key, value| %>
+			<div class="allTasks__description"> <%= value %> </div>
+<!-- 			<button type="submit" name="editDescription" value= "<%= key %>" ></button> -->
+		<% end %>
+	</form>
+</div>
