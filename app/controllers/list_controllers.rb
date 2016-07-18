@@ -7,6 +7,7 @@ MyApp.get "/all_tasks" do
 	@currentHash = List.getCurrentHash("todolist.txt")
 	@taskStatus = List.getTaskStatus(@currentHash)
 	@taskDescription = List.getTaskDescription(@currentHash)
+	binding.pry
 	erb :"/all_tasks"
 end
 
