@@ -33,53 +33,6 @@ body {
 .allTasks__header{
   font-size: 2em;
 }
-.winnerNotice__whichPlayer{
-  -webkit-animation-name: winnerNotice__whichPlayer; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-  animation-name: winnerNotice__whichPlayer;
-  animation-duration: 4s;
-}
-@-webkit-keyframes winnerNotice__whichPlayer {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
-}
-@keyframes winnerNotice__whichPlayer {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
-}
-.tieNotice{
-  color: white;
-  font-size: 3em;
-  font-weight: 100;
-  text-align: center;
-}
-.tieNotice__image{
-  height: 400px;
-  width: 400px;
-}
-.personalize__Welcome{
-  font-size: 5em;
-  -webkit-animation-name: personalize__Welcome; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
-  animation-name: personalize__Welcome;
-  animation-duration: 10s;
-}
-@-webkit-keyframes personalize__Welcome {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
-}
-@keyframes personalize__Welcome {
-    0%   {color: red;}
-    25%  {color: yellow;}
-    50%  {color: blue;}
-    100% {color: green;}
-}
-.personalize__Inputs{
-  font-size: -1em;
+.newTask__field {
+  width: 300px;
 }
