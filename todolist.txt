@@ -3,12 +3,5 @@
 2|Go to grocery storei
 3|Do laundryi
 4|Prepare paperworki
-5|Eat breakfastc
-6|feed the cati
-7|feed the cati
-8|water the plantsi
-9|
-10|
-11|wash the cari
-12|
-13|sand the floori
+5|
+6|

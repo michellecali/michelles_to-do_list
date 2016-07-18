@@ -7,7 +7,6 @@ MyApp.get "/all_tasks" do
 	@currentHash = List.getCurrentHash("todolist.txt")
 	@taskStatus = List.getTaskStatus(@currentHash)
 	@taskDescription = List.getTaskDescription(@currentHash)
-	binding.pry
 	erb :"/all_tasks"
 end
 
@@ -28,4 +27,19 @@ MyApp.post "/new_task" do
 	@newTask = "#{@nextKey}|#{@newDescription}#{@newStatus}"
 	List.writeNewTask("todolist.txt", @newTask)
 	redirect "/new_task"
+end
+
+MyApp.get "/edit_task" do
+	@current_page = "edit a task"
+	@currentHash = List.getCurrentHash("todolist.txt")
+	@taskStatus = List.getTaskStatus(@currentHash)
+	@taskDescription = List.getTaskDescription(@currentHash)
+	@editTask = params['editTask']
+	erb :"/edit_task"
+end
+
+MyApp.post "/edit_task" do
+	
+	
+	redirect "/edit_task"
 end

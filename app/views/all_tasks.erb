@@ -1,8 +1,8 @@
 <div class="allTasks">
-	<form class="allTasks__list" method="post" action="/all_tasks">
+	<form class="allTasks__list" method="post" action="/edit_task">
 		<p class="allTasks__header">List of All Tasks</p>
 		<% @taskDescription.each do |key, value| %>
-			<div class="allTasks__description"> <%= value %> </div>
+			<div class="allTasks__description"> <%= value %>
 		<% end %>
 	</form>
 </div>
@@ -10,4 +10,7 @@
 <br>
 <form action="/new_task" method="post" class="newButton">
 	<button type="submit" name="new_task" value="yes">Create New Task</button>
+</form>
+<form action="/edit_task" method="post" class="newButton">
+	<button type="submit" name="edit_task" value="yes">Edit Tasks</button>
 </form>
